@@ -58,7 +58,7 @@ h1 {
   font-size: 4.5rem;
 }
 
-.contet-home p {
+.contet-home span {
   font-size: var(--mani-size);
   font-weight: 500;
 }

@@ -3,18 +3,22 @@ let spans = document.querySelectorAll(".progress span");
 
 let services = document.querySelector(".section-counter")
 let number = document.querySelectorAll(".section-counter .number");
+
+let typing = document.querySelector(".contet-home span")
 let started = false;
 
 let navbar = document.querySelector(".navbar");
+
+var typed = new Typed(typing, {
+  // Waits 1000ms after typing "First"
+  strings: ['Developer.', 'Freelancer.', 'Photographer.' , 'Designer.',], typeSpeed: 100, backSpeed: 100, loop: true,
+});
+
 
 window.onscroll = function () {
   if (window.scrollY >= section.offsetTop - 70) {
     spans.forEach((span) => {
       span.style.width = span.dataset.width;
-    });
-  }else{
-    spans.forEach((span) => {
-      span.style.width = 0;
     });
   }
 
